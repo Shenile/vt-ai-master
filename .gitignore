@@ -1,0 +1,61 @@
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Environment
+env/
+venv/
+ENV/
+.env
+*.env
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Flask / Gunicorn debug logs
+*.log
+
+# Python packaging
+*.egg-info/
+build/
+dist/
+
+# Jupyter notebooks checkpoints (if any)
+.ipynb_checkpoints/
+
+# Local testing / artifacts
+*.sqlite3
+*.db
+*.bak
+
+# Node (if your frontend is here too)
+node_modules/
+
+# Visual test generated data
+baselines/
+results/
+
+# Temporary model data or weights
+models/__temp__/
+*.pth
+*.pt
+
+# Ngrok config (if used)
+ngrok.log
+
+# Temporary git stashes or merge fails
+*.orig
+
+# Specific temporary files
+*.tmp
+*.swp
