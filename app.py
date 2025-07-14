@@ -2,12 +2,10 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route("/webhook", methods=["POST"])
+@app.route("/trigger-test", methods=["GET", "POST"])
 def github_webhook():
     try:
-        payload = request.json
         print("🔔 Webhook triggered!")
-        print(payload)  # Or use json.dumps(payload, indent=2) for pretty print
 
         return jsonify({"status": "received"}), 200
     except Exception as e:
